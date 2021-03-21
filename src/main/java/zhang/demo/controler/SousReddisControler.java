@@ -13,7 +13,7 @@ import static zhang.demo.dao.Donnees.*;
 
 @RestController
 public class SousReddisControler {
-    private Donnees d = new Donnees();
+    private final Donnees d = new Donnees();
 
     @RequestMapping(value = "/sousreddit/{idSR}",method = RequestMethod.GET)
     public SousReddit chercherSousReddit(@PathVariable("idSR") String id){
